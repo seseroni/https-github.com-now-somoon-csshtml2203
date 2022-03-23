@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>visibily 속성</title>
+    <style>
+        #display_none div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        #display_none div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        #display_none div:nth-child(3){
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            opacity: 0.5;
+        }
+
+        #visibility_hidden div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            opacity: 0.7;
+        }
+
+        #visibility_hidden div:nth-child(2){
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            visibility: hidden;
+        }
+
+        #visibility_hidden div:nth-child(3){
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            opacity: 0.4;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="display_none">
+        <div>content1</div>
+        <div>content2</div>
+        <div>content3</div>
+    </div>
+
+    <div id="visibility_hidden">
+        <div>content1</div>
+        <div>content2</div>
+        <div>content3</div>
+    </div>
+
+</body>
+</html>

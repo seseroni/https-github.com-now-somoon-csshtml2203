@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box sizing</title>
+    <style>
+
+        body {
+            margin: 0;
+            background-color: #dddddd;
+        }
+
+        div {
+            width: 200px; height: 200px;
+            margin: 10px; padding: 10px;
+            border: 10px solid #ff8d00;
+            /* border 속성에는 위 처럼 세개를 묶어 쓸 수도있고 따로 쓸 수도 있다. */
+        }
+
+        div:nth-child(1){
+            margin: 0;
+            border: 0;
+            padding: 0;
+            background-color: red;
+        }
+        
+        div:nth-child(2){
+            background-color: green;
+            box-sizing: border-box;
+        }
+
+        div:nth-child(3){
+            background-color: blue;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+</body>
+</html>

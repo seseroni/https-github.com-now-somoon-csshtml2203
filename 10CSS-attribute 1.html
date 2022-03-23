@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS의 단위</title>
+  <style>
+
+    #wrap #content1 p:nth-child(2n) {
+      background-color: rgb(220, 241, 26);
+    }
+    #wrap #content2 p:nth-child(2n) {
+      background-color: rgb(231, 228, 31);
+    }
+    #content1, #content2 {
+      width: 600px; margin: 0 auto; 
+        /* 마진 0 auto는 가운데 정렬을 말한다 */
+      padding: 20px;
+      border: 1px solid rgb(0, 0, 0);
+      color: rgb(28, 103, 243);
+      font-weight: bold;
+    }
+
+    #content1 p:nth-child(1){font-size: 100%;}
+    #content1 p:nth-child(2){font-size: 120%;}
+    #content1 p:nth-child(3){font-size: 140%;}
+    #content1 p:nth-child(4){font-size: 160%;}
+
+    #content1 p span{
+      display: block;
+      /* 스팬태그는 옆으로 쭉 나타나게 하지만 block코드를 사용해서 계행을 함 */
+      color: rgb(10, 183, 252);
+      font-size: normal;
+      font-weight: normal;
+    }
+
+    #content2 p:nth-child(1){font-size: 1.6em;}
+    #content2 p:nth-child(2){font-size: 1.4em;}
+    #content2 p:nth-child(3){font-size: 1.2em;}
+    #content2 p:nth-child(4){font-size: 1em;}
+
+    #content2 p span{
+      display: block;
+      color: rgb(19, 238, 253);
+      font-size: 16px;
+      font-weight: normal;
+        /* 볼드체가 아님 */
+    }
+
+  </style>
+
+</head>
+<body>
+    <div id="wrap">
+
+      <div id="content1">
+
+        <p>
+          중앙방역대책본부는 오늘 0시 기준 코로나19 신규 확진자는 49만 881명으로 누적 1,042만 7,247명이라고 밝혔습니다.
+          <span>2022년 3월 23일 기준</span>
+        </p>
+        <p>
+          중앙방역대책본부는 오늘 0시 기준 코로나19 신규 확진자는 49만 881명으로 누적 1,042만 7,247명이라고 밝혔습니다.
+          <span>2022년 3월 23일 기준</span>
+        </p>
+        <p>
+          중앙방역대책본부는 오늘 0시 기준 코로나19 신규 확진자는 49만 881명으로 누적 1,042만 7,247명이라고 밝혔습니다.
+          <span>2022년 3월 23일 기준</span>
+        </p>
+        <p>
+          중앙방역대책본부는 오늘 0시 기준 코로나19 신규 확진자는 49만 881명으로 누적 1,042만 7,247명이라고 밝혔습니다.
+          <span>2022년 3월 23일 기준</span>
+        </p>
+        <p>
+          중앙방역대책본부는 오늘 0시 기준 코로나19 신규 확진자는 49만 881명으로 누적 1,042만 7,247명이라고 밝혔습니다.
+          <span>2022년 3월 23일 기준</span>
+        </p>
+      </div>
+
+      <div id="content2">
+        <p>
+          중앙방역대책본부는 오늘 0시 기준 코로나19 신규 확진자는 49만 881명으로 누적 1,042만 7,247명이라고 밝혔습니다.
+          <span>2022년 3월 23일 기준</span>
+        </p><p>
+          중앙방역대책본부는 오늘 0시 기준 코로나19 신규 확진자는 49만 881명으로 누적 1,042만 7,247명이라고 밝혔습니다.
+          <span>2022년 3월 23일 기준</span>
+        </p><p>
+          중앙방역대책본부는 오늘 0시 기준 코로나19 신규 확진자는 49만 881명으로 누적 1,042만 7,247명이라고 밝혔습니다.
+          <span>2022년 3월 23일 기준</span>
+        </p><p>
+          중앙방역대책본부는 오늘 0시 기준 코로나19 신규 확진자는 49만 881명으로 누적 1,042만 7,247명이라고 밝혔습니다.
+          <span>2022년 3월 23일 기준</span>
+        </p>
+      </div>
+    </div>
+
+</body>
+</html>
